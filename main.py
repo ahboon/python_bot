@@ -6,7 +6,7 @@ import random
 from microsoftbotframework import ReplyToActivity
 from microsoftbotframework import MsBot
 import apiReader
-import env
+import envBotOne
 
 
 def echo_response(message):
