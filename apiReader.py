@@ -29,9 +29,8 @@ def ReadWeatherForecast():
         html = json.loads(response.read().decode())
         weather_forecast = html['items'][0]['forecasts']
     
-    for i in range(0,len(weather_forecast)):
-        print(weather_forecast[i]['area'], ":", weather_forecast[i]['forecast'])
+    # for i in range(0,len(weather_forecast)):
+    #     print(weather_forecast[i]['area'], ":", weather_forecast[i]['forecast'])
 
-    #return weather_forecast
+    return weather_forecast
 
-ReadWeatherForecast()
